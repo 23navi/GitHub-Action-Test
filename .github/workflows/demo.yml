@@ -2,11 +2,11 @@ name: demo1
 
 on: [push]
 
-jobs: 
+jobs:
   run-github-demo1:
     runs-on: ubuntu-latest
     steps:
-      - name: a
-        run: echo navi
-
-
+      - name: pwd and ls
+        run: |
+          pwd
+          ls
