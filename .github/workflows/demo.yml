@@ -1,7 +1,9 @@
+
 name: Deploy website
 on: [pull_request]
+
 jobs:
-  test:
+  run-github-demo1:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
