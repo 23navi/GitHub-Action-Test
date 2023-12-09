@@ -1,10 +1,10 @@
-name: second
+name: On Issue
 
-on: [push]
+on: issue
 
 jobs:
-  run-github-demo1:
+  echo-on-issue:
     runs-on: ubuntu-latest
     steps:
-      - name: a
-        run:
+      - name: echo
+        run: echo "${{github}}"
