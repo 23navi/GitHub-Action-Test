@@ -1,10 +1,10 @@
 name: On Issue
 
-on: issue
+on: issues
 
 jobs:
   echo-on-issue:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: echo "${{github}}"
+        run: echo ${{github}}
