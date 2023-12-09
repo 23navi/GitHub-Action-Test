@@ -20,3 +20,20 @@ jobs:
         run: npm run lint
       - name: echo linting status
         run: echo "Linting done"
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: echo checkout status
+        run: echo "Checkout complete"
+      - name: Installing Node@18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: install deps
+        run: npm i
+      - name: run testing
+        run: npm run test ci
+      - name: echo Testing status
+        run: echo "Testing done"
