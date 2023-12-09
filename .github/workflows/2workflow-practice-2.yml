@@ -17,4 +17,4 @@ jobs:
       - name: run linting
         run: npm run lint
       - name: echo linting status
-        uses: echo "Linting done"
+        run: echo "Linting done"
